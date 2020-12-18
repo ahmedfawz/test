@@ -1,0 +1,296 @@
+/**********************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+*
+{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+body
+{
+	font-family: 'Tajawal', sans-serif; 
+	font-size: 20px;
+	line-height: 1.5;
+}
+.container
+{
+	margin: 0 auto;
+}
+
+.primary-text {
+	color: #56a79a;
+}
+
+/****************************************************************/
+
+/**********************HEADER*******************************/
+
+#main-header
+{
+	border-bottom: 1px solid #56a79a
+}
+#navbar {text-transform: uppercase;}
+
+#navbar li
+{
+	display: inline-block;
+	list-style: none;
+	padding-right: 20px;
+}
+
+#navbar a
+{
+	text-decoration: none;
+	color: #888;
+}
+
+#navbar li.current a, #navbar a:hover 
+{
+    color: #56a79a;
+    border-bottom: 3px solid #56a79a;
+	padding-bottom: 3px;
+}    
+
+/****************************************************/
+
+
+/***************************************************** showcase ******************************/
+
+#showcase
+{
+	background-image: url(../images/showcase.jpg);
+	background-size: cover;
+	border-bottom: 1px solid #56a79a;
+	margin-bottom: 30px;
+}
+
+#showcase .row
+{
+	height: 600px;
+}
+
+
+#showcase h1
+{
+	margin: 0;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+#showcase p
+{
+	color: #ccc;
+	margin: 0;
+}
+
+#showcase .showcase-content
+{
+	background: #333;
+	color: #FFF;
+	border-radius: 108px;
+    opacity: 0.9;
+    padding: 31px;
+}
+/*********************************/
+
+/* features */
+
+#features h2
+{
+	font-size: 40px;
+	margin-bottom: 20px;
+	margin: 0;
+}
+
+#features p
+{
+	color: #888;
+	margin: 0;
+	padding-bottom: 35px;
+}
+
+#features .fa, .fas  
+{
+	font-size: 60px;
+	color: #56a79a;
+}
+
+/*****************************************************/
+
+/* info */
+
+#info
+{
+	background-image: url(../images/info-bg.jpg);
+	color: #FFF;
+}
+
+#info h2
+{
+	font-size: 40px;
+}
+
+#info ul
+{
+	list-style: none;
+	padding: 0;
+}
+
+#info liS
+{
+	line-height:2em;
+	font-size: 19px;
+}
+/*******************************************************/
+
+/*************company*******************************/
+
+#company
+{
+	background: #333;
+	color: #FFF;
+}
+
+#company h4
+{
+	font-size: 22px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+#company ul
+{
+	list-style: none;
+	padding: 0;
+	line-height: 2;
+}
+
+#company input[type=text]
+{
+	padding: 7px;
+}
+
+#company button
+{
+	padding: 10px;
+	border: 0;
+	color: #FFF;
+	background: #222;
+	border-radius: 50%;
+	transition: all 5s ease-in-out ;
+}
+#company button:hover
+{
+	background: #56a79a;
+	border-radius: initial;
+	cursor:copy;
+}
+
+/**************************************************/
+
+/*****************main-footer**************************/
+
+#main-footer
+{
+	background:#56a79a ;
+	color: #FFF;
+}
+
+/***********************************************************/
+
+/* page */
+
+#page
+{
+	margin-bottom: 40px;
+}
+.services ul li
+{
+	list-style: none;
+	padding: 10px;
+}
+
+.services ul li:nth-child(odd)
+{
+	background: #333;
+	color: #FFF;
+}
+
+.services ul li:nth-child(even)
+{
+	background:#56a79a ;
+	color: #FFF;
+
+}
+
+
+/*********************************/
+
+
+.contact form {
+	background: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+.contact form input[type="text"]{
+	width: 50%;
+	height: 30px;
+	margin-bottom: 20px;
+}
+
+
+.contact form textarea
+{
+	width: 50%;
+	height: 100px;
+}
+
+.contact form button{
+	width: 50%;
+	padding: 10px 0;
+	border: 0;
+	background: #222;
+	color: #fff;
+	transition: all 1s ease-in-out;
+	cursor: col-resize;
+}
+.contact form button:hover
+{
+	background: #56a79a;
+	cursor: pointer;
+	border-radius: 50px;
+}
+
+
+.contact form label{
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+#main-footer p
+{
+	font-size: 20px;
+}
+
+@media(max-width:800px){
+	#showcase h1{
+		font-size: 30px;
+	}
+	#showcase p{
+		font-size: 12px;
+	}
+}
+
+@media(max-width:500px){
+	#showcase .showcase-content{
+		padding: 40px 10px;
+	}
+}
+
